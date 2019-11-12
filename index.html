@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="">
+    <div class="banner">
         <nav class="navbar navbar-expand-md navbar-light" id="topo">
             <a class="navbar-brand" href="#"><img src="./assets/logo.png" class="img-fluid logo"
                     alt="Logo Voo Livre Sistemas">
@@ -49,6 +49,7 @@
                                 class="sr-only">(atual)</span></a>
                     </li>
                 </ul>
+                <!-- Caixa de pesquisa
                 <form action="" method="" class="ml-0 ml-lg-5">
                     <button type="submit" class="btn btn-danger  button-search ml-2">
                         <i class="fas fa-search"></i>
@@ -57,12 +58,35 @@
                         <input class="form-control" type="search" placeholder="pesquisar">
                     </div>
                 </form>
+                -->
             </div>
         </nav>
 
-        <div class="div-banner" id="home">
-            <img src="./assets/banner-ti.jpg" class="img-fluid img-banner" alt="Bussola">
+        <div id="carousel-banner" class="carousel slide carousel" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active slider-banner">
+                    <img class="d-block img-banner" src="./assets/bussola-pedra.jpg"
+                        alt="Primeiro Slide Bussola e Pedras">
+                </div>
+                <div class="carousel-item slider-banner">
+                    <img class="d-block img-banner" src="./assets/banner-ti.jpg"
+                        alt="Segundo Slide Banner Processos e T.I">
+                </div>
+                <div class="carousel-item slider-banner">
+                    <img class="d-block img-banner" src="./assets/bussola-teclado.jpg"
+                        alt="Terceiro Slide Bussola e Teclado">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
+
 
         <div class="container my-5 text-center d-flex w-100 justify-content-center">
             <h3>Sua empresa voando cada vez mais longe...</h1>
@@ -192,10 +216,37 @@
             <hr class="featurette-divider">
         </div>
 
-        <div id="contatos">
+        <div id="fale-conosco" class="container">
             <div id="header-contatos" class="align-items-center">
                 <H3 class="text-center p-2">Contatos</H3>
             </div>
+            <div class="fale-conosco rounded mb-5 container align-items-center">
+                <h3><i class="fas fa-envelope"></i> Fale conosco</h3>
+                <form method="POST" action="contato.php">
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault01">Nome</label>
+                            <input type="text" class="form-control no-border" name="nome" placeholder="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault02">Telefone</label>
+                            <input type="text" class="form-control" name="telefone" placeholder="">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault03">Email</label>
+                            <input type="text" class="form-control" name="email" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="validationDefault04">Mensagem</label>
+                        <textarea type="text" class="form-control" name="mensagem" placeholder="" required></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="contatos">
             <div class="card-group card-contatos">
                 <div class="card align-items-center p-3">
                     <i class="fas fa-phone-alt fa-3x"></i>
@@ -242,12 +293,6 @@
                 <br>
                 <a href="https://www.linkedin.com/company/voo-livre-consultoria-processos-e-sistemas">
                     <span><i class="fab fa-linkedin fa-3x"></i></span>
-                </a>
-                <a href="#">
-                    <span><i class="fab fa-facebook-square fa-3x"></i></span>
-                </a>
-                <a href="#">
-                    <span><i class="fab fa-twitter-square fa-3x"></i></span>
                 </a>
             </div>
         </footer>

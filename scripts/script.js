@@ -10,6 +10,8 @@ $(function () {
     });
 
     $('.smoothscroll-top').on('click', scrollToTop);
+
+    $('.carousel').carousel();
 });
 
 function scrollToTop() {

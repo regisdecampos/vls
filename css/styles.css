@@ -29,7 +29,7 @@ body {
 */
 
 @media (min-width: 1025px) {
-    .div-banner {
+    .slider-banner {
         height: 400px;
     }
     .img-banner {
@@ -44,9 +44,9 @@ body {
 
 @media (min-width: 0px) and (max-width: 1024px) {
     .img-banner {
-        height: 220px;
+        height: 210px;
     }
-    .div-banner {
+    .slider-banner {
         margin-bottom: 5rem;
     }
 }
@@ -55,8 +55,8 @@ nav {
     background-color: white;
 }
 
-.navbar-toggler{
-    border:none;
+.navbar-toggler {
+    border: none;
 }
 
 .button-search {
@@ -119,6 +119,11 @@ nav {
     color: black;
 }
 
+.fale-conosco {
+    padding: 3%;
+    background-color: whitesmoke;
+}
+
 div#header-contatos {
     width: 100%;
     padding: 3;
@@ -126,10 +131,15 @@ div#header-contatos {
 }
 
 .featurette-divider {
-    margin: 5rem 0; /* Espaça o elemento <hr> mais */
-  }
-  
+    margin: 5rem 0;
+    /* Espaça o elemento <hr> mais */
+}
+
 .footer {
-    background-color: white; 
-    color: black; 
-}  
+    background-color: white;
+    color: black;
+}
+
+div#contato-obrigado {
+    background-color: whitesmoke;
+}
